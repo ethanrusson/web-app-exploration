@@ -1,2 +1,2 @@
 # web-app-exploration
-BYU-Idaho CIT 261 Mobile Application Development
+Portfolio for BYU-Idaho CIT 261 Mobile Application Development
