@@ -38,7 +38,8 @@ const calculator = {
       case '-':
         break;
       case '+':
-        
+        this._operation = '+';
+        this._inputOutput.value = '';
         break;
       case '=':
         this.equals();
