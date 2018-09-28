@@ -1,0 +1,42 @@
+:root {
+  --buttonWidth: 88px;
+  --width: calc(var(--buttonWidth) * 4);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 44px;
+}
+.calcBody {
+  max-width: var(--width);
+}
+.calcBody > input {
+  width: 100%;
+  height: var(--buttonWidth);
+  font-size: calc(var(--buttonWidth) * 0.8);
+  border: 1px solid rgb(240,240,240);
+}
+.calcButtons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calcButtons button {
+  margin: 0;
+  width: var(--buttonWidth);
+  height: var(--buttonWidth);
+  font-size: 24px;
+  border: 1px solid rgb(240,240,240);
+}
+.calcButtons button:active, .calcButton button:hover {
+    background:rgb(240,240,240);
+}
+.calcButtons button:focus {
+    outline: 0;
+}
+button.span {
+  flex: 1 0 calc(var(--buttonWidth) * 1.4);
+}
