@@ -9,12 +9,18 @@ const calculator = {
   add: function() {
       return this._number1 + this._number2;
   },
+  subtract: function() {
+    return this._number1 - this._number2;
+},
   equals: function() {
       console.log(this);
       if (this._operation != '') {
           switch (this._operation) {          
               case '+':
                 this._inputOutput.value = this.add();
+                break;
+              case '-':
+                this._inputOutput.value = this.subtract();
                 break;
       }
   }
@@ -36,6 +42,8 @@ const calculator = {
       case 'X':
         break;
       case '-':
+        this._operation = '-';
+        this._inputOutput.value = '';
         break;
       case '+':
         this._operation = '+';
