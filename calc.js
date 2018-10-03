@@ -6,12 +6,8 @@ const calculator = {
   clear: function() {
     this._inputOutput.value = '';
   },
-  add: function() {
-      return this._number1 + this._number2;
-  },
-  subtract: function() {
-    return this._number1 - this._number2;
-},
+  add: function() {return this._number1 + this._number2},
+  subtract: function() {return this._number1 - this._number2},
   equals: function() {
       console.log(this);
       if (this._operation != '') {
@@ -61,10 +57,10 @@ const calculator = {
             this._number2 = parseFloat(button.innerHTML);
         }
     }
-  }
+  } 
 };
-// const buttonContainer = document.querySelector('.calcButtons');
-// buttonContainer.addEventListener('touchend', calculator.buttonClicked);
+const buttonContainer = document.querySelector('.calcButtons');
+buttonContainer.addEventListener('touchend', calculator.buttonClicked);
 
 // function buttonClicked(button) {
 //   console.log(button);
