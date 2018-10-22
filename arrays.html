@@ -178,6 +178,19 @@
         console.log(shipDisplay);
 
 
+		function reverseString(str) {
+			let newStr = "";
+			for (var i = (str.length - 1); i >= 0; i--) {
+				newStr += str[i];
+			}
+			console.log(newStr);			
+		}
+		reverseString("test test")
+		function reverseString2(str) {
+			return str.split("").reverse().join("");
+		}
+		console.log(reverseString2("Greetings from Earth"));
+		
         </script>
         </body>
         </html>
